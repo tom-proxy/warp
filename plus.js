@@ -29,8 +29,8 @@ const DataBase = {
 	const Panel = {
 		"title": "☁ 𝕎𝔸ℝℙ ᴾˡᵘˢ ☁",
 		"icon": "smoke.fill",
-    "icon-color": "#ffa500",
-		"content": `公用IP: ${Trace.ip}\n主机托管中心: ${Trace.loc} | ${Trace.colo}\nWARP隐私: ${Trace.warp}\n账户类型: ${Account.data.type}\n${Account.data.text}`,
+                "icon-color": "#ffa500",
+		"content": `公用IP: ${Trace.ip}\n主机托管中心: 🏴‍☠️${Trace.loc} ➠ ${Trace.colo}🏴‍☠️\nWARP隐私: ${Trace.warp}\n账户类型: ${Account.data.type}\n${Account.data.text}`,
 	};
     $done(Panel);
 })()
