@@ -46,7 +46,7 @@ const DataBase = {
 		Account = await Cloudflare("GET", Request).then(result => formatAccount(result?.account ?? {}));
 	};
 	const Panel = {
-		"title": $.isStash() ? "☁ 𝕎𝔸ℝℙ ᴾˡᵘˢ ☁" : "☁ 𝕎𝔸ℝℙ ᴾˡᵘˢ ☁",
+		"title": $.isStash() ? "𝙒𝘼𝙍𝙋 𝙄𝙣𝙛𝙤" : "☁ 𝙒𝘼𝙍𝙋 𝙄𝙣𝙛𝙤",
 		"icon": $.isStash() ? "https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/warp.png" : "lock.icloud.fill",
 		"content": `${Configs.i18n[Language]?.IPv4 ?? "公用IPv4"}: ${Trace4?.ip ?? Configs.i18n[Language]?.Fail ?? "获取失败"}\n`
 			+ `${Configs.i18n[Language]?.IPv6 ?? "公用IPv6"}: ${Trace6?.ip ?? Configs.i18n[Language]?.Fail ?? "获取失败"}\n`
