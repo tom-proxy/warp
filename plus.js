@@ -9,7 +9,7 @@ const DataBase = {
 		"Configs": {
 			"Request":{"url":"https://api.cloudflareclient.com","headers":{"authorization":null,"content-Type":"application/json","user-Agent":"1.1.1.1/2109031904.1 CFNetwork/1327.0.4 Darwin/21.2.0","cf-client-version":"i-6.7-2109031904.1"}},
 			"i18n":{
-				"zh-Hans":{"4":"4","6":"6","COLO":"","WARP_Level":"","Account_Type":"👤","Data_Info":"ℹ️","Unknown":"🤷🏼","Fail":"☹️","WARP_Level_Off":"📵","WARP_Level_On":"🔛","WARP_Level_Plus":"增强","Account_Type_unlimited":"无限版","Account_Type_limited":"有限版","Account_Type_team":"团队版","Account_Type_plus":"WARP+","Account_Type_free":"免费版","Data_Info_Used":"已用","Data_Info_Residual":"剩余","Data_Info_Total":"总计","Data_Info_Unlimited":"无限"},
+				"zh-Hans":{"4️⃣"➠"4️⃣","6️⃣"➠"6️⃣","COLO"➠"💒","WARP_Level"➠"🛡️","Account_Type"➠"👤","Data_Info"➠"ℹ️","Unknown"➠"🤷🏼","Fail"➠"☹️","WARP_Level_Off"➠"📵","WARP_Level_On"➠"🔛","WARP_Level_Plus"➠"增强","Account_Type_unlimited"➠"无限版","Account_Type_limited"➠"有限版","Account_Type_team"➠"团队版","Account_Type_plus"➠"WARP+","Account_Type_free"➠"免费版","Data_Info_Used"➠"已用","Data_Info_Residual"➠"剩余","Data_Info_Total"➠"总计","Data_Info_Unlimited"➠"无限"},
 				"zh-Hant":{"IPv4":"IPv4","IPv6":"IPv6","COLO":"託管中心","WARP_Level":"隱私保護","Account_Type":"賬戶類型","Data_Info":"流量信息","Unknown":"未知","Fail":"獲取失敗","WARP_Level_Off":"關閉","WARP_Level_On":"開啟","WARP_Level_Plus":"增強","Account_Type_unlimited":"無限版","Account_Type_limited":"有限版","Account_Type_team":"團隊版","Account_Type_plus":"WARP+","Account_Type_free":"免費版","Data_Info_Used":"已用","Data_Info_Residual":"剩餘","Data_Info_Total":"總計","Data_Info_Unlimited":"無限"},
 				"en":{"IPv4":"IPv4","IPv6":"IPv6","COLO":"Colo Center","WARP_Level":"WARP Level","Account_Type":"Account Type","Data_Info":"Data","Unknown":"Unknown","Fail":"Fail to Get","WARP_Level_Off":"OFF","WARP_Level_On":"ON","WARP_Level_Plus":"PLUS","Account_Type_unlimited":"Unlimited","Account_Type_limited":"Limited","Account_Type_team":"Team","Account_Type_plus":"WARP+","Account_Type_free":"Free","Data_Info_Used":"Used","Data_Info_Residual":"Remaining","Data_Info_Total":"Earned","Data_Info_Unlimited":"Unlimited"}
 			}
@@ -20,7 +20,7 @@ const DataBase = {
 	},
 	"VPN": {
 		"Settings":{"Switch":true,"PrivateKey":"","PublicKey":""},
-		"Configs":{"interface":{"addresses":{"v4":"","v6":""}},"peers":[{"public_key":"","endpoint":{"host":"","v4":"","v6":""}}]}
+		"Configs":{"interface":{"addresses":{"4️⃣":"","6️⃣":""}},"peers":[{"public_key":"","endpoint":{"host":"","4️⃣":"","6️⃣":""}}]}
 	},
 	"DNS": {
 		"Settings":{"Switch":true,"Verify":{"Mode":"Token","Content":""},"zone":{"id":"","name":"","dns_records":[{"id":"","type":"A","name":"","content":"","ttl":1,"proxied":false}]}},
