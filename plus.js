@@ -77,7 +77,7 @@ Trace6?.colo | Configs.i18n[Language]?.Fail ?? "获取失败"}\n`
 				case "Loon":
 				case "Quantumult X":
 					Panel.title = Settings?.Title ?? 
-"☁ 𝙒𝘼𝙍𝙋 𝙄𝙣𝙛𝙤"
+"🌩️𝓩𝓮𝓻𝓸𝓣𝓻𝓾𝓼𝓽🌩️"
 					Panel.message = connectInfo;
 					break;
 				case "Surge":
