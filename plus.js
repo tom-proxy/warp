@@ -4,7 +4,7 @@ README: https://github.com/VirgilClyne/Cloudflare
 const $ = new Env("☁ Cloudflare: 1️⃣ 1.1.1.1 v2.0.0(1).panel");
 const DataBase = {
 	"Panel": {
-		"Settings":{"Switch":true,"Title":"☁ 𝙒𝘼𝙍𝙋 𝙄𝙣𝙛𝙤","Icon":"lock.icloud.fill","IconColor":"#f48220","BackgroundColor":"#f6821f","Language":"auto"},
+		"Settings":{"Switch":true,"Title":"☁ 𝙒𝘼𝙍𝙋 𝙄𝙣𝙛𝙤","Icon":"lock.icloud.fill","Color":"#f48220","BackgroundColor":"#f6821f","Language":"auto"},
 		"Configs": {
 			"Request":{"url":"https://api.cloudflareclient.com","headers":{"authorization":null,"content-Type":"application/json","user-Agent":"1.1.1.1/2109031904.1 CFNetwork/1327.0.4 Darwin/21.2.0","cf-client-version":"i-6.7-2109031904.1"}},
 			"i18n":{
