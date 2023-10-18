@@ -5,7 +5,7 @@ README: https://github.com/VirgilClyne/Cloudflare
 const $ = new Env("☁ Cloudflare: 1️⃣ 1.1.1.1 v2.0.0(2).panel");
 const DataBase = {
 	"Panel": {
-		"Settings":{"Switch":true,"Title":"☁𝓦𝓐𝓡𝓟𝓘𝓝𝓕𝓞☁","Icon":"lock.icloud.fill","IconColor":"#f48220","BackgroundColor":"#f6821f","Language":"auto"},
+		"Settings":{"Switch":true,"Title":"🌩️𝓦𝓐𝓡𝓟🌩️","Icon":"lock.icloud.fill","IconColor":"#f48220","BackgroundColor":"#f6821f","Language":"auto"},
 		"Configs": {
 			"Request":{"url":"https://api.cloudflareclient.com","headers":{"authorization":null,"content-Type":"application/json","user-Agent":"1.1.1.1/2109031904.1 CFNetwork/1327.0.4 Darwin/21.2.0","cf-client-version":"i-6.7-2109031904.1"}},
 			"i18n":{
@@ -74,18 +74,18 @@ const DataBase = {
 					break;
 				case "Loon":
 				case "Quantumult X":
-					Panel.title = Settings?.Title ?? "☁𝓦𝓐𝓡𝓟𝓘𝓝𝓕𝓞☁"
+					Panel.title = Settings?.Title ?? "🌩️𝓦𝓐𝓡𝓟🌩️"
 					Panel.message = connectInfo;
 					break;
 				case "Surge":
 				default:
-					Panel.title = Settings?.Title ?? "☁𝓦𝓐𝓡𝓟𝓘𝓝𝓕𝓞☁"
+					Panel.title = Settings?.Title ?? "🌩️𝓦𝓐𝓡𝓟🌩️"
 					Panel.icon = Settings?.Icon ?? "lock.icloud.fill";
 					Panel["icon-color"] = Settings?.IconColor ?? "#f48220";
 					Panel.content = connectInfo;
 					break;
 				case "Stash":
-					Panel.title = Settings?.Title ?? "𝓦𝓐𝓡𝓟𝓘𝓝𝓕𝓞"
+					Panel.title = Settings?.Title ?? "🌩️𝓦𝓐𝓡𝓟🌩️"
 					Panel.icon = Settings?.Icon ?? "https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/warp.png";
 					Panel["icon-color"] = Settings?.IconColor ?? "#f48220";
 					Panel.backgroundColor = Settings?.BackgroundColor ?? "#f6821f";
