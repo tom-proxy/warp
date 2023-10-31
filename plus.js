@@ -7,11 +7,11 @@ const DataBase = {
 	"Panel": {
 		"Settings":{"Switch":true,"Title":"🌩️𝓦𝓐𝓡𝓟🌩️","Icon":"lock.icloud.fill","IconColor":"#f48220","BackgroundColor":"#f6821f","Language":"auto"},
 		"Configs": {
-			"Request":{"url":"https://api.cloudflareclient.com","headers":{"authorization":null,"content-Type":"application/json","user-Agent":"1.1.1.1/2109031904.1 CFNetwork/1327.0.4 Darwin/21.2.0","cf-client-version":"i-6.7-2109031904.1"}},
+			"Request":{"url":"https://api.cloudflareclient.com","headers":{"authorization":null,"content-Type":"application/json","user-Agent":"1.1.1.1/2109031904.1 CFNetwork/1327.0.4 Darwin/21.2.0","cf-client-version":"i-6.7-2109031904.1"}}, 
 			"i18n":{
 				"zh-Hans":{"IPv4":"IPv4","IPv6":"IPv6","COLO":"托管中心","WARP_Level":"隐私保护","Account_Type":"账户类型","Data_Info":"流量信息","Unknown":"未知","Fail":"获取失败","WARP_Level_Off":"关闭","WARP_Level_On":"开启","WARP_Level_Plus":"增强","Account_Type_unlimited":"无限版","Account_Type_limited":"有限版","Account_Type_team":"团队版","Account_Type_plus":"WARP+","Account_Type_free":"免费版","Data_Info_Used":"已用","Data_Info_Residual":"剩余","Data_Info_Total":"总计","Data_Info_Unlimited":"无限"},
 				"zh-Hant":{"IPv4":"IPv4","IPv6":"IPv6","COLO":"託管中心","WARP_Level":"隱私保護","Account_Type":"賬戶類型","Data_Info":"流量信息","Unknown":"未知","Fail":"獲取失敗","WARP_Level_Off":"關閉","WARP_Level_On":"開啟","WARP_Level_Plus":"增強","Account_Type_unlimited":"無限版","Account_Type_limited":"有限版","Account_Type_team":"團隊版","Account_Type_plus":"WARP+","Account_Type_free":"免費版","Data_Info_Used":"已用","Data_Info_Residual":"剩餘","Data_Info_Total":"總計","Data_Info_Unlimited":"無限"},
-				"en":{"IPv4":"IPv4","IPv6":"IPv6","COLO":"Colo Center","WARP_Level":"WARP Level","Account_Type":"Account Type","Data_Info":"Data","Unknown":"Unknown","Fail":"Fail to Get","WARP_Level_Off":"OFF","WARP_Level_On":"ON","WARP_Level_Plus":"PLUS","Account_Type_unlimited":"Unlimited","Account_Type_limited":"Limited","Account_Type_team":"Team","Account_Type_plus":"WARP+","Account_Type_free":"Free","Data_Info_Used":"Used","Data_Info_Residual":"Remaining","Data_Info_Total":"Earned","Data_Info_Unlimited":"Unlimited"}
+				"en":{"IPv4":"IPv4","IPv6":"IPv6","COLO":"Colo Center","WARP_Level":"WARP Level","Account_Type":"Account Type","Data_Info":"Data","Unknown":"Unknown","Fail":"Fail to Get","WARP_Level_Off":"OFF","WARP_Level_On":"ON","WARP_Level_Plus":"PLUS","Account_Type_unlimited":"Unlimited","Account_Type_limited":"Limited","Account_Type_team":"Team","Account_Type_plus":"WARP+","Account_Type_free":"Free","Data_Info_Used":"Used","Data_Info_Residual":"Remaining","Data_Info_Total":"Earned","Data_Info_Unlimited":"Unlimited"}  
 			}
 		}
 	},
@@ -23,7 +23,7 @@ const DataBase = {
 		"Settings":{"Switch":true,"PrivateKey":"","PublicKey":""},
 		"Configs":{"interface":{"addresses":{"v4":"","v6":""}},"peers":[{"public_key":"","endpoint":{"host":"","v4":"","v6":""}}]}
 	},
-	"DNS": {
+	"DNS": { 
 		"Settings":{"Switch":true,"Verify":{"Mode":"Token","Content":""},"zone":{"id":"","name":"","dns_records":[{"id":"","type":"A","name":"","content":"","ttl":1,"proxied":false}]}},
 		"Configs":{"Request":{"url":"https://api.cloudflare.com/client/v4","headers":{"content-type":"application/json"}}}
 	},
@@ -61,10 +61,10 @@ const DataBase = {
 					break;
 			};
 			// 获取WARP信息
-			const [Trace4, Trace6] = await Promise.allSettled([Cloudflare(Request, "trace4"), Cloudflare(Request, "trace6")]).then(results => results.map(result => formatTrace(result?.value, Language)));
+			const [Trace4, Trace6] = await Promise.allSettled([Cloudflare(Request, "trace4"), Cloudflare(Request, "trace6")]).then(results => results.map(result => formatTrace(result?.value, Language))); 
 			// 构造面板信息
 			let Panel = {};
-			const connectInfo = `${Configs.i18n[Language]?.IPv4 ?? "IPv4"}: ${Trace4?.ip ?? Configs.i18n[Language]?.Fail ?? "获取失败"}\n`
+			const connectInfo = `${Configs.i18n[Language]?.IPv4 ?? "IPv4"}: ${Trace4?.ip ?? Configs.i18n[Language]?.Fail ?? "获取失败"}\n` 
 			+ `${Configs.i18n[Language]?.IPv6 ?? "IPv6"}: ${Trace6?.ip ?? Configs.i18n[Language]?.Fail ?? "获取失败"}\n`
 			+ `${Configs.i18n[Language]?.COLO ?? "托管中心"}: ${Trace4?.loc ?? Trace6?.loc} | ${Trace4?.colo ?? Trace6?.colo | Configs.i18n[Language]?.Fail ?? "获取失败"}\n`
 			+ `${Configs.i18n[Language]?.WARP_Level ?? "隐私保护"}: ${Trace4?.warp?.toUpperCase() ?? Trace6?.warp?.toUpperCase() ?? Configs.i18n[Language]?.Fail ?? "获取失败"}`;
@@ -80,7 +80,7 @@ const DataBase = {
 				case "Surge":
 				default:
 					Panel.title = Settings?.Title ?? "🌩️𝓦𝓐𝓡𝓟🌩️"
-					Panel.icon = Settings?.Icon ?? "lock.icloud.fill";
+					Panel.icon = Settings?.Icon ?? "lock.icloud.fill"; 
 					Panel["icon-color"] = Settings?.IconColor ?? "#f48220";
 					Panel.content = connectInfo;
 					break;
@@ -200,7 +200,7 @@ function formatAccount(account, language = $environment?.language ?? "zh-Hans", 
 			break;
 		case "free":
 			account.data = {
-				"type": `${account?.account_type?.toUpperCase()} | ${i18n[language]?.Account_Type_free ?? "免费版"}`,
+				"type": `${account?.account_type?.toUpperCase()} | ${i18n[language]?.Account_Type_free ?? "免费版"}`, 
 				"limited": true,
 				"used": account.premium_data - account.quota,
 				"flow": account.quota,
@@ -239,11 +239,11 @@ async function Cloudflare(Request = DataBase.WARP.Configs.Request, opt = "trace"
 			delete _Request.headers;
 			return await formatCFJSON(_Request);
 		case "trace4":
-			_Request.url = "https://1.1.1.1/cdn-cgi/trace";
-			delete _Request.headers;
+			_Request.url = "https://cloudflare.com/cdn-cgi/trace";    
+			delete _Request.headers; 
 			return await formatCFJSON(_Request);
 		case "trace6":
-			_Request.url = "https://[2606:4700:4700::1111]/cdn-cgi/trace";
+			_Request.url = "https://[2606:4700:4700::1111]/cdn-cgi/trace"; 
 			delete _Request.headers;
 			return await formatCFJSON(_Request);
 		case "GET":
@@ -274,7 +274,7 @@ async function Cloudflare(Request = DataBase.WARP.Configs.Request, opt = "trace"
 					if (error) throw new Error(error)
 					else if (data) {
 						const _data = JSON.parse(data)
-						if (Array.isArray(_data.messages)) _data.messages.forEach(message => {
+						if (Array.isArray(_data.messages)) _data.messages.forEach(message => { 
 							if (message.code !== 10000) $.msg($.name, `code: ${message.code}`, `message: ${message.message}`);
 						})
 						switch (_data.success) {
