@@ -239,7 +239,7 @@ async function Cloudflare(Request = DataBase.WARP.Configs.Request, opt = "trace"
 			delete _Request.headers;
 			return await formatCFJSON(_Request);
 		case "trace4":
-			_Request.url = "https://1.1.1.1/cdn-cgi/trace";        
+			_Request.url = "https://162.159.36.1/cdn-cgi/trace";        
 			delete _Request.headers;   
 			return await formatCFJSON(_Request);
 		case "trace6":
