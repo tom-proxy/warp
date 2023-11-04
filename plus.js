@@ -74,18 +74,18 @@ const DataBase = {
 					break;
 				case "Loon":
 				case "Quantumult X":
-					Panel.title = Settings?.Title ?? "🌩️𝓦𝓐𝓡𝓟🌩️"
+					Panel.title = Settings?.Title ?? "🌩️ⓌⒶⓇⓅ🌩️"
 					Panel.message = connectInfo;
 					break;
 				case "Surge":
 				default:
-					Panel.title = Settings?.Title ?? "🌩️𝓦𝓐𝓡𝓟🌩️"
+					Panel.title = Settings?.Title ?? "🌩️ⓌⒶⓇⓅ🌩️"
 					Panel.icon = Settings?.Icon ?? "lock.icloud.fill"; 
 					Panel["icon-color"] = Settings?.IconColor ?? "#f48220";
 					Panel.content = connectInfo;
 					break;
 				case "Stash":
-					Panel.title = Settings?.Title ?? "🌩️𝓦𝓐𝓡𝓟🌩️"
+					Panel.title = Settings?.Title ?? "🌩️ⓌⒶⓇⓅ🌩️"
 					Panel.icon = Settings?.Icon ?? "https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/warp.png";
 					Panel["icon-color"] = Settings?.IconColor ?? "#f48220";
 					Panel.backgroundColor = Settings?.BackgroundColor ?? "#f6821f";
